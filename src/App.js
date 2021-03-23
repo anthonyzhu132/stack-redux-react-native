@@ -8,7 +8,7 @@ import Header from './components/common/Header';
 const App = () => {
   return (
     <Provider store={createStore(reducers)}>
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText="Stack" />
       </View>
     </Provider>

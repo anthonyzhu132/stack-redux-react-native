@@ -6,7 +6,7 @@ class ListItem extends Component {
   render() {
     return (
       <CardIem>
-        <Text>
+        <Text style={styles.titleStyle}>
           {this.props.library.title}
         </Text>
       </CardIem>
@@ -14,5 +14,11 @@ class ListItem extends Component {
   }
 }
 
+const styles = {
+  titleStyle: {
+    fontSize: 18,
+    paddingLeft: 15
+  }
+}
 
 export default ListItem;
