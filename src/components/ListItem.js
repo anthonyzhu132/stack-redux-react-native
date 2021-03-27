@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Text } from 'react-native;'
 import CardItem from './common/CardItem';
+import * as actions from '../actions';
 
 class ListItem extends Component {
   render() {
@@ -21,4 +23,4 @@ const styles = {
   }
 }
 
-export default ListItem;
+export default connect(null, actions)(ListItem);
