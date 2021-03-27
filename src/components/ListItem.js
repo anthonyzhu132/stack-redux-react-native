@@ -5,11 +5,11 @@ import CardItem from './common/CardItem';
 class ListItem extends Component {
   render() {
     return (
-      <CardIem>
+      <CardItem>
         <Text style={styles.titleStyle}>
           {this.props.library.title}
         </Text>
-      </CardIem>
+      </CardItem>
     )
   }
 }
