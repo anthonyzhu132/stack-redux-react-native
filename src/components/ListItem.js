@@ -5,6 +5,17 @@ import CardItem from './common/CardItem';
 import * as actions from '../actions';
 
 class ListItem extends Component {
+
+  renderDescription() {
+    const { library, selectedLibraryId } = this.props;
+
+    if(library.id === selectedLibraryId) {
+      return (
+        <Text>{library.description}</Text>
+      );
+    }
+  }
+
   render() {
     const { id, title } = this.props.library
 
@@ -18,6 +29,9 @@ class ListItem extends Component {
               {title}
             </Text>
           </CardItem>
+
+          {this.renderDescription}
+          
         </View>
       </TouchableWithoutFeedback>
     )
